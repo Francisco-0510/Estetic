@@ -1,0 +1,209 @@
+/* ESTILOS GLOBALES */
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+}
+
+:root {
+    --color-black: #0D0B08;
+    --color-white: #ffffff;
+    --color-orange: #FD8900;
+}
+
+
+/* ESTILOS BARRA DE NAVEGACIÓN */
+
+.nav-item>.nav-link {
+    color: var(--color-black);
+    font-weight: 800;
+    margin: 0 1rem;
+}
+
+.nav-item>.nav-link:hover {
+    color: var(--color-orange);
+}
+
+
+/* ESTILOS DE BOTONES Y LINKS */
+
+.btn-style {
+    text-align: center;
+    display: block;
+}
+
+.button {
+    min-width: 4rem;
+    font-weight: 600;
+    font-size: 0.87rem;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btnPrimary {
+    border: solid var(--color-orange) 2px;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+}
+
+.btnPrimary:hover {
+    color: var(--color-white);
+}
+
+.btnSecondary {
+    border: solid var(--color-black) 2px;
+    color: var(--color-black);
+}
+
+.btnSecondary:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.btnTerciary {
+    border: none;
+    color: var(--color-orange);
+    padding: 0;
+    letter-spacing: .2rem;
+}
+
+.btnTerciary:hover {
+    color: #FD8900;
+}
+
+.container {
+    width: 100%;
+    height: 40rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.font-style {
+    text-align: center;
+    margin: 50px;
+}
+
+
+/* ESTILOS HEADER SECTION */
+
+.header-section {
+    background-image: url("../resources/etetica1.jpg");
+    background-size: auto;
+    background-position: center;
+}
+
+.header-section .col-8 {
+    padding: 4rem 8rem;
+}
+
+.header-span>p {
+    color: var(--color-orange);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.header-h1>h1 {
+    font-weight: 900;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    line-height: 1.6;
+}
+
+.header-h1,
+span {
+    font-size: 4rem;
+}
+
+.header-p>p {
+    max-width: 40rem;
+    line-height: 1.6;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.header-buttons {
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ESTILOS DE SECCIÓN DE SERVICIOS */
+
+.container>.servicios {
+    margin: 4rem 0;
+}
+
+.servicios-grid>.col-6 col-8 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.servicios-h1>h1 {
+    color: var(--color-orange);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.card-services {
+    border-radius: 5px;
+    margin: 2rem;
+}
+
+.card-services:hover {
+    background-color: #FFDCD6;
+}
+
+.card-services>.card-body {
+    text-align: justify;
+    padding: 1rem;
+}
+
+.card-body>h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: .3rem;
+    font-size: .875rem
+}
+
+.card-body>p {
+    font-size: 0.855rem;
+    font-weight: 300;
+}
+
+
+/* ESTILOS OFFCANVAS / DETALLE SERVICIO */
+
+.canvas>h2 {
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.canvas>p {
+    font-weight: 500;
+}
+
+.dispocita {
+    margin: 1rem 0;
+}
+
+.descripcita>p {
+    line-height: 1.8;
+    max-width: 65%;
+}
+
+.preciocita>p {
+    font-weight: 700;
+    letter-spacing: .3rem;
+    font-size: 1.8rem;
+}
+
+.btnAgendar {
+    margin: 2rem 0;
+}
