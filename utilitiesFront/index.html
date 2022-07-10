@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estetica GG</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="header-inicio">
+            <!-- BARRA DE NAVEGACIÓN -->
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Estetica GG</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link button btn3 " aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link button btn3" href="#">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link button btn3">Productos</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <a class="button btn1" type="submit" href="formAgendarCita.html">Agendar Cita</a>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="text-welcome">
+                <span>Lorem ipsum dolor sit amet.</span>
+                <h1 class="titulo1">Estetica GGS</h1>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, voluptates. Dolorem fuga iste blanditiis quibusdam.</p>
+                <div class="d-grid gap-3 d-md-block">
+                    <button class="button btn1" type="button">Agendar Cita</button>
+                    <button class="button btn2" type="button">Ver Paquetes</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container p-4">
+        <div class="intro-servicios">
+            <h2 class="titulo2">Nuestros Servicios</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, eaque! Dolorem ut itaque et ea eos repudiandae libero magni sunt aspernatur debitis maxime corporis, veniam, minima porro eum molestias voluptate?</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 p-2">
+                <div class="card-paquete">
+                    <img class="card-img-top img-fluid" src="resources/etetica1.jpg" alt="">
+                    <div class="card-body">
+                        <div class="status-titulo ">
+                            <h5 class="titulo5">Lorem ipsum dolor sit.</h5>
+                            <div class="estados">
+                                <badge class="disponible">Disponible</badge>
+                                <badge class="pendiente">Pendiente</badge>
+                                <badge class="no-disponible">No disponible</badge>
+                            </div>
+                            <div class="des">
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In iusto nulla illum quae dolor, esse iste exercitationem saepe nihil eum!</p>
+                            </div>
+                            <button class="button btn1 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Más Detalles</button>
+                            <!-- MODAL DETALLE SERVICIO -->
+                            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                                <div class="offcanvas-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body ">
+                                    <div class="container">
+                                        <div class="card card-offcanvas ">
+                                            <div class="row g-0">
+                                                <div class="col-md-4 d-flex align-items-center">
+                                                    <img src="resources/etetica1.jpg" class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h2 class="titulo2">Nombre del Servicio</h2>
+                                                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link active pills" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Descripción</button>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link pills" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Que Incluye</button>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link pills" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Comentarios</button>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="tab-content" id="pills-tabContent">
+                                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                                                <div class="estados ">
+                                                                    <badge class="disponible">Disponible</badge>
+                                                                    <badge class="pendiente">Pendiente</badge>
+                                                                    <badge class="no-disponible">No disponible</badge>
+                                                                </div>
+                                                                <div class="info-canvas">
+                                                                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ab sed exercitationem, aperiam officiis possimus rem laboriosam corporis, sequi dicta, corrupti necessitatibus aut nostrum
+                                                                        illum soluta vel consequuntur excepturi! Recusandae.</p>
+                                                                    <h2 class="titulo2">$00.00</h2>
+                                                                    <a href="" class="button btn1 pt-2">Quiero esta cita</a>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                                                                    xxx
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 p-2">
+                <div class="card-paquete">
+                    <img class="card-img-top img-fluid" src="resources/etetica1.jpg" alt="">
+                    <div class="card-body">
+                        <div class="status-titulo ">
+                            <h5 class="titulo5">Lorem ipsum dolor sit.</h5>
+                            <div class="estados">
+                                <badge class="disponible">Disponible</badge>
+                                <badge class="pendiente">Pendiente</badge>
+                                <badge class="no-disponible">No disponible</badge>
+                            </div>
+                            <div class="des">
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In iusto nulla illum quae dolor, esse iste exercitationem saepe nihil eum!</p>
+                            </div>
+                            <a href="" class="button btn1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Más Detalles</a>
+                            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body ">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4 p2">
+                                                <img class="card-img-top img-fluid" src="resources/etetica1.jpg" alt="">
+                                            </div>
+                                            <div class="col-sm-8 p2">
+                                                <div class="detalle-paquete">
+                                                    <h2 class="titulo2">Nombre del Servicio</h2>
+                                                    <badge class=" disponible">Disponible</badge>
+                                                    <badge class=" pendiente">Pendiente</badge>
+                                                    <badge class=" no-disponible">No disponible</badge>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 p-2">
+                <div class="card-paquete">
+                    <img class="card-img-top img-fluid" src="resources/etetica1.jpg" alt="">
+                    <div class="card-body">
+                        <div class="status-titulo ">
+                            <h5 class="titulo5">Lorem ipsum dolor sit.</h5>
+                            <div class="estados">
+                                <badge class="disponible">Disponible</badge>
+                                <badge class="pendiente">Pendiente</badge>
+                                <badge class="no-disponible">No disponible</badge>
+                            </div>
+                            <div class="des">
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In iusto nulla illum quae dolor, esse iste exercitationem saepe nihil eum!</p>
+                            </div>
+                            <a href="" class="button btn1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Más Detalles</a>
+                            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body ">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4 p2">
+                                                <img class="card-img-top img-fluid" src="resources/etetica1.jpg" alt="">
+                                            </div>
+                                            <div class="col-sm-8 p2">
+                                                <div class="detalle-paquete">
+                                                    <h2 class="titulo2">Nombre del Servicio</h2>
+                                                    <badge class=" disponible">Disponible</badge>
+                                                    <badge class=" pendiente">Pendiente</badge>
+                                                    <badge class=" no-disponible">No disponible</badge>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <hr>
+        <div class="container text-center p-4 m-4">
+            <h1 class="titulo1">Info Extra (Opcional)</h1>
+        </div>
+        <hr>
+        <div class="container text-center p-4 m-4">
+            <h1 class="titulo1">Info Extra (Opcional)</h1>
+        </div>
+        <hr>
+        <footer>
+            <h1 class="titulo1">Footer</h1>
+            <h2 class="titulo2">Links</h2>
+            <h2 class="titulo2">Redes Sociales</h2>
+            <h2 class="titulo2">Formulario de ContCTO</h2>
+        </footer>
+    </div>
+    <!--     <header class="header-section">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="">GG-Style</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class=" button nav-link " aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" button nav-link " aria-current="page" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" button nav-link  " aria-current="page" href="#">Contacto</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <a href="formAgendarCita.html" class="button btnPrimary" type="submit">Agendar Cita</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid header-section2">
+            <div class="row">
+                <div class="col-8">
+                    <div class="header-span">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="header-h1">
+                        <h1 class="titulo1">Bienvenido a <br><span class="logo">Estetica GG</span></h1>
+                    </div>
+                    <div class="header-p">
+                        <p class="texto1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit non aperiam minus asperiores impedit culpa delectus optio temporibus. Debitis, totam?</p>
+                    </div>
+                    <div class="header-buttons">
+                        <a href="agendarCitaForm.html" class="button btnPrimary">Agendar Cita</a>
+                        <a href="" class="button btnSecondary">Conocer los servicios</a>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="servicios">
+            <div class="servicios-h1">
+                <h1>Nuestros g Servicios</h1>
+            </div>
+            <div class="container  ">
+                <div class="row servicios-grid">
+                    <div class="col-6 col-md-4">
+                        <div class=" card-services">
+                            <img src="resources/r1-removebg-preview.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magni dolore nobis iusto reiciendis dignissimos.</p>
+                                <a href="#" class="button btnTerciary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Más Detalles</a>
+                                <div class="offcanvas offcanvas-bottom offcanvas-lg" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                                    <div class="container">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body small">
+                                            <div class="card mb-3">
+                                                <div class="row g-0">
+                                                    <div class="col-md-4">
+                                                        <img src="resources/r1-removebg-preview.png" class="img-fluid rounded-start" alt="...">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="card-body canvas">
+                                                            <h2 class="card-title ">Nombre del Servicio</h2>
+                                                            <div class="dispocita">
+                                                                <span class="badge text-bg-success">Citas Disponibles</span>
+                                                                <span class="badge text-bg-warning">Citas Disponibles</span>
+                                                                <span class="badge text-bg-danger">Citas Disponibles</span>
+                                                            </div>
+
+                                                            <div class="descripcita">
+                                                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi numquam architecto dolor, cumque amet dignissimos quam eligendi officiis nam perspiciatis quaerat quis laborum ipsa nihil quibusdam,
+                                                                    ullam atque corrupti! Perspiciatis!</p>
+                                                            </div>
+                                                            <div class="preciocita">
+                                                                <p>$00.00</p>
+                                                            </div>
+                                                            <div class="btnAgendar">
+                                                                <a href="agendarCitaForm.html" class="button btnPrimary">Agendar Cita</a>
+                                                            </div>
+                                                            <div class="detallescita">
+                                                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                                    <li class="nav-item tab-cita" role="presentation">
+                                                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">¿Qué Incluye?</button>
+                                                                    </li>
+                                                                    <li class="nav-item" role="presentation">
+                                                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Calendario de Citas</button>
+                                                                    </li>
+                                                                    <li class="nav-item" role="presentation">
+                                                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contactanos</button>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="tab-content" id="myTabContent">
+                                                                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
+                                                                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+                                                                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class=" card-services">
+                            <img src="resources/r1-removebg-preview.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magni dolore nobis iusto reiciendis dignissimos.</p>
+                                <a href="#" class="button btnTerciary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Más Detalles</a>
+                                <div class="offcanvas offcanvas-bottom offcanvas-lg" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                                    <div class="container">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body small">
+                                            <div class="card mb-3">
+                                                <div class="row g-0">
+                                                    <div class="col-md-4">
+                                                        <img src="resources/r1-removebg-preview.png" class="img-fluid rounded-start" alt="...">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="card-body canvas">
+                                                            <h2 class="card-title ">Nombre del Servicio</h2>
+                                                            <div class="dispocita">
+                                                                <span class="badge text-bg-success">Citas Disponibles</span>
+                                                                <span class="badge text-bg-warning">Citas Disponibles</span>
+                                                                <span class="badge text-bg-danger">Citas Disponibles</span>
+                                                            </div>
+
+                                                            <div class="descripcita">
+                                                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi numquam architecto dolor, cumque amet dignissimos quam eligendi officiis nam perspiciatis quaerat quis laborum ipsa nihil quibusdam,
+                                                                    ullam atque corrupti! Perspiciatis!</p>
+                                                            </div>
+                                                            <div class="preciocita">
+                                                                <p>$00.00</p>
+                                                            </div>
+                                                            <div class="btnAgendar">
+                                                                <a href="agendarCitaForm.html" class="button btnPrimary">Agendar Cita</a>
+                                                            </div>
+                                                            <div class="detallescita">
+                                                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                                    <li class="nav-item tab-cita" role="presentation">
+                                                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">¿Qué Incluye?</button>
+                                                                    </li>
+                                                                    <li class="nav-item" role="presentation">
+                                                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Calendario de Citas</button>
+                                                                    </li>
+                                                                    <li class="nav-item" role="presentation">
+                                                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contactanos</button>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="tab-content" id="myTabContent">
+                                                                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
+                                                                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+                                                                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class=" card-services">
+                            <img src="resources/r1-removebg-preview.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magni dolore nobis iusto reiciendis dignissimos.</p>
+                                <a href="#" class="button btnTerciary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Más Detalles</a>
+                                <div class="offcanvas offcanvas-bottom offcanvas-lg" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                                    <div class="container">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body small">
+                                            <div class="card mb-3">
+                                                <div class="row g-0">
+                                                    <div class="col-md-4">
+                                                        <img src="resources/r1-removebg-preview.png" class="img-fluid rounded-start" alt="...">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="card-body canvas">
+                                                            <h2 class="card-title ">Nombre del Servicio</h2>
+                                                            <div class="dispocita">
+                                                                <span class="badge text-bg-success">Citas Disponibles</span>
+                                                                <span class="badge text-bg-warning">Citas Disponibles</span>
+                                                                <span class="badge text-bg-danger">Citas Disponibles</span>
+                                                            </div>
+
+                                                            <div class="descripcita">
+                                                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi numquam architecto dolor, cumque amet dignissimos quam eligendi officiis nam perspiciatis quaerat quis laborum ipsa nihil quibusdam,
+                                                                    ullam atque corrupti! Perspiciatis!</p>
+                                                            </div>
+                                                            <div class="preciocita">
+                                                                <p>$00.00</p>
+                                                            </div>
+                                                            <div class="btnAgendar">
+                                                                <a href="agendarCitaForm.html" class="button btnPrimary">Agendar Cita</a>
+                                                            </div>
+                                                            <div class="detallescita">
+                                                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                                    <li class="nav-item tab-cita" role="presentation">
+                                                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">¿Qué Incluye?</button>
+                                                                    </li>
+                                                                    <li class="nav-item" role="presentation">
+                                                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Calendario de Citas</button>
+                                                                    </li>
+                                                                    <li class="nav-item" role="presentation">
+                                                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contactanos</button>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="tab-content" id="myTabContent">
+                                                                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
+                                                                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+                                                                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!--  <div class="container">
+        <div class="font-style">
+            <h1 class="titulo1">Esto es un h1</h1>
+            <h2 class="titulo2">Esto es un h2</h2>
+            <h3 class="titulo3">Esto es un h3</h3>
+            <h4 class="titulo4">Esto es un h4</h4>
+            <h5 class="titulo5">Esto es un h5</h5>
+            <h6 class="titulo6">Esti es un h6</h6>
+            <p class="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quidem.</p>
+        </div>
+        <div class="btn-style">
+            <a href="" class="button btnPrimary">Botón Primario</a>
+            <a href="" class="button btnSecondary">Botón Secundario</a>
+            <a href="" class="button btnTerciary">Botón Terciario</a>
+        </div>
+    </div> -->
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</html>

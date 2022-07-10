@@ -1,0 +1,638 @@
+/* ESTILOS GLOBALES */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+:root {
+    --color-black: #0D0B08;
+    --color-white: #ffffff;
+    --color-orange: #FD8900;
+    --color-verde-confirm: #66CB9F;
+    --color-amarillo-danger: #F7936F;
+    --color-rojo-alert: #F16063;
+    --color-orange-hover: #FFDCD6;
+    --color-text: #425466;
+    --color-titulos: #27272E;
+    --background-color-imputs: #EDF2F7;
+    --color-help-input: #718096;
+    --color-placeholder-dafault: #7A828A;
+    --color-border-focus: #7895FF;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+}
+
+body {
+    background-color: #F6F6F6;
+    margin: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.maps_iframe {
+    position: relative;
+    /* 16:9 */
+    height: 0;
+}
+
+.maps_iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 90vh;
+}
+
+h1,
+.titulo1 {
+    font-size: 2.25rem;
+    line-height: 49px;
+    font-weight: bold;
+}
+
+h2,
+.titulo2 {
+    font-size: 1.625rem;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+h5,
+.titulo5 {
+    color: var(--color-titulos);
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+p,
+.text {
+    font-weight: 400;
+    font-style: normal;
+    line-height: 23px;
+    font-size: 0.87em;
+    color: var(--color-text);
+    font-feature-settings: "salt" on;
+}
+
+.label-input {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 17px;
+    color: var(--color-text);
+}
+
+.help-input {
+    line-height: 12px;
+    font-size: 0.688em;
+    color: var(--color-help-input);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+.label-select {
+    margin: 8px 0;
+    color: var(--color-placeholder-dafault);
+    font-size: 0.625em;
+    font-weight: 500;
+    min-width: 14rem;
+    padding: 12px 8px;
+    border-radius: 4px;
+    border: 1px solid var(--background-color-imputs);
+    background-color: var(--background-color-imputs);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="number"]:focus {
+    outline: var(--color-border-focus);
+    border: 1px solid var(--color-border-focus);
+    box-shadow: 0px 0px 0px 2px rgba(76, 111, 255, 0.3);
+}
+
+.input-form {
+    width: 100%;
+}
+
+badge {
+    font-weight: 700;
+    font-size: 0.625em;
+    line-height: 16px;
+    padding: 6px 8px;
+    gap: 10px;
+    color: var(--color-white);
+    border-radius: 6px;
+}
+
+.img-metodoPago {
+    width: 50%;
+    min-height: 2rem;
+}
+
+.card-metodoPago {
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.card-metodoPago:hover,
+.card-metodoPago>p {
+    background-color: #EEEDFF;
+    color: var(--color-white);
+}
+
+.disponible {
+    background-color: var(--color-verde-confirm);
+}
+
+.pendiente {
+    background-color: var(--color-amarillo-danger);
+}
+
+.no-disponible {
+    background-color: var(--color-rojo-alert);
+}
+
+
+/* ESTILOS BARRA DE NACEGACIÓN */
+
+.navbar-brand {
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    font-size: 6em;
+}
+
+ul li a,
+.btn1,
+.btn2,
+.btn3 {
+    text-decoration: none;
+}
+
+
+/* ESTILOS DE BOTONES */
+
+.nav-item,
+.nav-llink,
+.button {
+    font-size: 0.75em;
+    border: none;
+    padding: 0.75rem 1.2rem;
+    line-height: 12px;
+    gap: 10px;
+    cursor: pointer;
+    min-width: 4rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.btn1 {
+    color: var(--color-white);
+    background-color: var(--color-orange);
+}
+
+.btn1:hover {
+    color: var(--color-white);
+    box-shadow: rgba(172, 111, 13, 0.2) 0px 8px 26px;
+}
+
+.btn2 {
+    border: solid 1px var(--color-black);
+}
+
+.btn3 {
+    background-color: transparent;
+    border: none;
+    color: var(--color-rojo-alert);
+}
+
+
+/* ESTILOS HEADER PAGINA PRINCIPAL */
+
+.header-inicio {
+    background-image: url("../resources/etetica1.jpg");
+    background-position: center;
+    min-height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-welcome {
+    padding: 6rem 2rem;
+}
+
+.text-welcome>span {
+    text-transform: uppercase;
+    color: var(--color-orange);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
+/* .text-welcome>h1 {
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 2.5em;
+} */
+
+.text-welcome>p {
+    width: 50%;
+}
+
+.intro-servicios {
+    text-align: center;
+}
+
+.card-paquete {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    width: 19rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: none;
+    gap: 7px;
+    border-radius: 16px;
+}
+
+.card-paquete:hover {
+    box-shadow: rgba(172, 111, 13, 0.2) 0px 8px 24px;
+}
+
+.card-paquete>img {
+    border-radius: 15px;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+    margin: 10px;
+}
+
+.estados {
+    padding-bottom: 4px;
+}
+
+
+/* .card-body>h5 {
+    margin: 16px 0;
+    font-size: 1em;
+    line-height: 25px;
+    font-weight: bold;
+} */
+
+
+/* .card-body>p {
+    font-size: 0.875em;
+    font-weight: 500;
+    color: #425466;
+    line-height: 23px;
+} */
+
+.offcanvas {
+    min-height: 70%;
+}
+
+#pills-profile-tab,
+#pills-contact-tab,
+#pills-home-tab {
+    color: var(--color-black);
+}
+
+#pills-home-tab:hover,
+#pills-profile-tab:hover,
+#pills-contact-tab:hover {
+    color: var(--color-white);
+    background-color: var(--color-orange);
+}
+
+#pills-home-tab:focus,
+#pills-profile-tab:focus,
+#pills-contact-tab:active:focus {
+    color: var(--color-white);
+    background-color: var(--color-orange);
+}
+
+#pills-profile-tab:active,
+#pills-contact-tab:active,
+#pills-home-tab:active {
+    color: var(--color-white);
+    background-color: var(--color-orange);
+}
+
+.pills::after {
+    color: var(--color-white);
+    background-color: var(--color-orange);
+}
+
+.encabezado {
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.encabezado-child {
+    width: 100%;
+}
+
+.info-form {
+    padding: 2rem 5rem;
+}
+
+main {
+    min-width: 430px;
+    padding: 6rem 1.2rem;
+    text-align: left;
+    display: grid;
+    grid-gap: 5rem;
+}
+
+main img {
+    width: 50%;
+    max-width: 40rem;
+    margin: auto;
+}
+
+.form-elements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 12px 0;
+}
+
+.modal-header {
+    background-color: #FCECEB;
+}
+
+
+/* 
+.navbar-brand {
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    font-size: 6em;
+}
+
+.nav-item>.nav-link {
+    color: var(--color-black);
+    font-weight: 800;
+    margin: 0 1rem;
+}
+
+.nav-item>.nav-link:hover {
+    color: var(--color-orange);
+}
+
+.btn-style {
+    text-align: center;
+    display: block;
+}
+
+.button {
+    min-width: 4rem;
+    font-weight: 600;
+    font-size: 0.87rem;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btnPrimary {
+    border: solid var(--color-orange) 2px;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+}
+
+.btnPrimary:hover {
+    color: var(--color-white);
+}
+
+.btnSecondary {
+    border: solid var(--color-black) 2px;
+    color: var(--color-black);
+}
+
+.btnSecondary:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.btnTerciary {
+    border: none;
+    color: var(--color-orange);
+    padding: 0;
+    letter-spacing: .2rem;
+}
+
+.btnTerciary:hover {
+    color: #FD8900;
+}
+
+.container {
+    width: 100%;
+    height: 40rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.font-style {
+    text-align: center;
+    margin: 50px;
+}
+
+
+
+.row-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-side {
+    flex: 30%;
+    padding: 2rem;
+}
+
+.main {
+    flex: 70%;
+}
+
+.img-form {
+    width: 100%;
+}
+
+.form-label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .7em;
+}
+
+.header-section {
+    background-image: url("../resources/etetica1.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-section2 .col-8 {}
+
+.header-span>p {
+    color: var(--color-orange);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.header-h1>h1 {
+    font-weight: 900;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    line-height: 1.6;
+}
+
+.header-h1,
+span {
+    font-size: 4rem;
+}
+
+.header-p>p {
+    max-width: 40rem;
+    line-height: 1.6;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.header-buttons {
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container>.servicios {
+    margin: 4rem 0;
+}
+
+.servicios-grid>.col-6 col-8 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.servicios-h1>h1 {
+    color: var(--color-orange);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.card-services {
+    border-radius: 5px;
+    margin: 2rem;
+}
+
+.card-services:hover {
+    background-color: var(--color-orange-hover);
+}
+
+.card-services>.card-body {
+    text-align: justify;
+    padding: 1rem;
+}
+
+.card-body>h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: .3rem;
+    font-size: .875rem
+}
+
+.card-body>p {
+    font-size: 0.855rem;
+    font-weight: 300;
+}
+
+.canvas>h2 {
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.canvas>p {
+    font-weight: 500;
+}
+
+.dispocita {
+    margin: 1rem 0;
+}
+
+.descripcita>p {
+    line-height: 1.8;
+    max-width: 65%;
+}
+
+.preciocita>p {
+    font-weight: 700;
+    letter-spacing: .3rem;
+    font-size: 1.8rem;
+}
+
+.btnAgendar {
+    margin: 2rem 0;
+}
+
+.info-encabezado {
+    padding: 2rem 2rem;
+}
+
+.titulo1 {
+    font-weight: bold;
+}
+
+input[type=text] {
+    font-size: .8em;
+    background-color: #FFFFFF;
+    border: solid 2px #CED4DA;
+    border-radius: 5px;
+    width: 100%;
+    padding: .75rem;
+    resize: vertical;
+}
+
+.label-input {
+    padding: .75rem;
+    display: inline-block;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: .37rem;
+}
+
+.col-25 {
+    float: left;
+    width: 75%;
+    margin-top: .67rem;
+}
+
+.info-form {
+    border: solid 2px #0D0B08;
+}
+
+@media screen and (max-width: 700px) {
+    .row-form {
+        flex-direction: column;
+    }
+} */
